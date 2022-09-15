@@ -10,11 +10,11 @@
 <body>
     <header>
         <nav> 
-            <a>Box Model</a>
-            <a>Flexbox</a>
-            <a>Positioning Elements</a>
-            <a>Heading Usage</a>
-            <a>Simple JavaScript</a>
+            <a href="#box-model">Box Model</a>
+            <a href="#flex-box">Flexbox</a>
+            <a href="#positioning-section">Positioning Elements</a>
+            <a href="#heading-section">Heading Usage</a>
+            <a href="#simple-javascript">Simple JavaScript</a>
         </nav>
     </header>
     <main>
@@ -31,25 +31,27 @@
             </div>
         </section>
 
-        <section id="flex-box" class="flex-box-section section">
-            <div class = "interior-flex interior">
-                <div class="interior-flex--top">
-                    <h1>Display: Flex</h1>
-                </div>
-            </div>
+        <section id="flex-box" class="flex-box-section section-element">
+            <div class="interior interior-flex">
+                    <div class="interior-flex--top">
+                        <div>
+                            <h1>Display: Flex</h1>
+                        </div>
+                    </div>
             <div class="interior-flex--horizontal">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <div class="interior-flex--vertical">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="interior-flex--vertical">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </section> 
 
-        <section id="positioning-section" class="positioning-section section">
+        <section id="positioning-section" class="positioning-section section-element">
             <div class="interior">
                 <div class="circle circle-one"></div>
                 <div class="circle" style="right: 48px; top: 34px"></div>
@@ -73,9 +75,30 @@
             </div>
         </section> 
 
-        <section id="simple-javascript" class="simple-javascript-section section"></section> 
+        <section id="simple-javascript" class="simple-javascript-section section-element">
+            <script>
+                let counter = 0;
 
+                function increaseCounterValue() {
+                    counter = counter + 1;
+                    const counterDiv = document.querySelector('#counter');
+                    counterDiv.innerHTML = counter;
+                }
+            </script>
+            <div class="interior">
+                <h1>Simple Javascript</h1>
+                <div class="counter-button-wrapper">
+                <p id="counter">0</p>
+                <div id="button">
+                    <button onclick="increaseCounterValue()">Click to Increase</button>
+                </div>
+            </div>
+        </div>
+        </section> 
     </main>
-    <footer></footer>
+
+    <section class="footer-section">
+        <p>Annie Chen - Fall, 2022</p>
+    </section>
 </body>
 </html>

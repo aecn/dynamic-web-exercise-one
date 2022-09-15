@@ -13,15 +13,32 @@ body {
 
 header {
     background-color: #85C4FF;
-    padding: 40px;
+    padding: 30px;
 }
 
-header nav {   
-
+header nav {
+    align-items: center;   
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 }
 
 header nav a {
+    color: black;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px;
+    text-decoration: none;
+}
 
+header-nav a:last-of-type {
+    margin-right: 0;
+}
+
+header-nav a:first-of-type {
+    margin-left: 0;
 }
 
 .heading-section {
@@ -130,12 +147,11 @@ section.box-model-section {
 .interior-flex > div {
     background-color: #FF9371;
     border: 10px solid #7D260B;
+    margin: 0 auto 40px auto;
 }
 
 .interior-flex--top {
     flex-basis: 100%;
-    margin-bottom: 40px;
-    padding: 32px;
     text-align: center;
 }
 
@@ -144,7 +160,7 @@ section.box-model-section {
     background-color: #FFECE5;
     border: 5px solid #DD4414;
     display: flex;
-    margin: 0 auto;
+    margin: 40px auto 40px auto;
     max-width: 825px;
     justify-content: center;
     height: 170px;
@@ -157,8 +173,6 @@ section.box-model-section {
 
 .interior-flex--horizontal,
 .interior-flex--vertical {
-    background-color: #FF9371;
-    border: 10px solid #7D260B;
     display: flex;
     flex-basis: 48%;
     height: 324px;
@@ -202,8 +216,8 @@ section.box-model-section {
 }
 
 .positioning-section h1 {
-    z-index: 1;
     position: relative;
+    z-index: 1;
 }
 
 .circle, .square {
@@ -218,7 +232,42 @@ section.box-model-section {
     border-radius: 50%;
 }
 
-.circle.circle-one {
+.circle .circle-one {
     bottom: 48px;
     left: 48px;
+}
+
+.simple-javascript-section {
+    background-color:#faefd3;
+}
+
+.simple-javascript-section .interior {
+    border-color: #644904;
+    color: #644904;
+}
+
+.counter-button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.counter-button-wrapper p {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    margin: 0 40px 0 0;
+}
+
+.footer-section {
+    background-color: #FFC3C3;
+    margin: 0;
+    position: absolute;
+    width: 1280px;
+}
+
+.footer-section p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 35px; 
 }
