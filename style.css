@@ -53,7 +53,7 @@ header-nav a:first-of-type {
     font-size: 64px;
     font-weight: 700;
     line-height: 1.5;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .heading-section h2 {
@@ -81,7 +81,7 @@ header-nav a:first-of-type {
 }
 
 .heading-section p {
-    color: #3A0F39;
+    color: #6C0468;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
@@ -147,7 +147,7 @@ section.box-model-section {
 .interior-flex > div {
     background-color: #FF9371;
     border: 10px solid #7D260B;
-    margin: 0 auto 40px auto;
+    margin: 0 0 40px 0;
 }
 
 .interior-flex--top {
@@ -246,12 +246,17 @@ section.box-model-section {
     color: #644904;
 }
 
+.simple-javascript-section h1 {
+    color: #644904;
+}
+
 .counter-button-wrapper {
     display: flex;
     align-items: center;
 }
 
 .counter-button-wrapper p {
+    color: #644904;
     font-size: 64px;
     font-weight: 700;
     line-height: 74px;
@@ -261,13 +266,14 @@ section.box-model-section {
 .footer-section {
     background-color: #FFC3C3;
     margin: 0;
+    padding: 15px;
     position: absolute;
     width: 1280px;
 }
 
 .footer-section p {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28px;
     margin-left: 35px; 
 }
